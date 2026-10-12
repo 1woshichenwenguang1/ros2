@@ -33,4 +33,4 @@ Gazebo 服务就绪后进入监护，任一环节失败即以非零码退出并�
 `python3 -m unittest tests/test_keyboard_teleop_sim_local.py -v`
 
 ## 运行效果
-![teleop demo](../img/turtlebot3_keyboard_teleop_sim_demo.gif)
+![teleop demo](../../img/ground/turtlebot3_keyboard_teleop_sim/teleop_demo.gif)

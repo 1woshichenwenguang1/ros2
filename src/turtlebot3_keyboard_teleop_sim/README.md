@@ -33,4 +33,4 @@ main.py -> roslaunch module launch -> turtlebot3_world + teleop node in xterm
 `python3 -m unittest tests/test_keyboard_teleop_sim_local.py -v`
 
 ## Demo
-![teleop demo](../../docs/img/turtlebot3_keyboard_teleop_sim_demo.gif)
+![teleop demo](../../../docs/img/ground/turtlebot3_keyboard_teleop_sim/teleop_demo.gif)
