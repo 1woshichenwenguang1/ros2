@@ -8,7 +8,7 @@ Keyboard teleoperation of TurtleBot3 in Gazebo (course task 1).
 ## Run steps
 1. `source /opt/ros/noetic/setup.bash`
 2. `python3 src/turtlebot3_keyboard_teleop_sim/scripts/main.py`
-3. Drive with `w a s d x` in the xterm window opened by the launch file;
+3. Drive with `方向键` in the xterm window opened by the launch file;
    stop this monitor with `Ctrl+C`.
 
 World-only start:
