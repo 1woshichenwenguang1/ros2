@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 PKG = os.path.join(ROOT, 'src', 'turtlebot3_keyboard_teleop_sim')
-MAIN = os.path.join(PKG, 'main.py')
+MAIN = os.path.join(PKG, 'scripts', 'main.py')
 LAUNCH = os.path.join(PKG, 'launch', 'keyboard_teleop_sim.launch')
 PKGXML = os.path.join(PKG, 'package.xml')
 
