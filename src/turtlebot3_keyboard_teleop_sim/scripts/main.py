@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Task 1 entry: start world plus keyboard teleop, verify startup, monitor."""
+import argparse
 import os
 import subprocess
 import sys
@@ -32,8 +33,13 @@ def gazebo_ready(env, timeout=5):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--gl', choices=['software', 'hardware'],
+                    default='software',
+                    help='rendering backend; software suits VMs without GPU')
+    args = ap.parse_args()
     env = env_setup()
-    if 'LIBGL_ALWAYS_SOFTWARE' not in os.environ:
+    if args.gl == 'software' and 'LIBGL_ALWAYS_SOFTWARE' not in os.environ:
         env['LIBGL_ALWAYS_SOFTWARE'] = '1'
     proc = subprocess.Popen(
         ['roslaunch', 'turtlebot3_keyboard_teleop_sim',
