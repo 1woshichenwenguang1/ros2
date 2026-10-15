@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot3_lidar_dqn_obstacle_avoidance</name>
+  <version>0.1.0</version>
+  <description>LiDAR perception with a numpy-implemented DQN neural network for
+    obstacle avoidance of TurtleBot3 in Gazebo (course task 2).</description>
+  <maintainer email="2507417911@qq.com">1woshichenwenguang1</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>gazebo_msgs</depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+</package>

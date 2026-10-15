@@ -1,0 +1,10 @@
+<launch>
+  <arg name="mode" default="infer" doc="train or infer"/>
+  <arg name="episodes" default="30" doc="training episodes when mode=train"/>
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
+  <node pkg="turtlebot3_lidar_dqn_obstacle_avoidance" type="main.py"
+        name="dqn_obstacle_avoidance" output="screen">
+    <param name="mode" value="$(arg mode)"/>
+    <param name="episodes" value="$(arg episodes)"/>
+  </node>
+</launch>
