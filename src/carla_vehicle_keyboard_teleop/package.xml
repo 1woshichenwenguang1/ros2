@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>carla_vehicle_keyboard_teleop</name>
+  <version>0.1.0</version>
+  <description>Keyboard teleoperation of a CARLA ego vehicle through the CARLA
+    Python API with synchronous stepping and headless evidence mode
+    (course task 1, CARLA simulator).</description>
+  <maintainer email="2507417911@qq.com">1woshichenwenguang1</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>geometry_msgs</depend>
+  <exec_depend>roslaunch</exec_depend>
+</package>

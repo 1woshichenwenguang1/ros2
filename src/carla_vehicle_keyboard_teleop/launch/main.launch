@@ -1,0 +1,13 @@
+<launch>
+  <arg name="host" default="192.168.27.1" doc="Windows host IP running CarlaUE4.exe"/>
+  <arg name="town" default="Town03"/>
+  <arg name="headless" default="false"/>
+  <node pkg="carla_vehicle_keyboard_teleop" type="main.py"
+        name="carla_vehicle_keyboard_teleop" output="screen"
+        args="--host $(arg host) --town $(arg town)"
+        launch-prefix="xterm -e" if="$(eval not headless)"/>
+  <node pkg="carla_vehicle_keyboard_teleop" type="main.py"
+        name="carla_vehicle_keyboard_teleop_headless" output="screen"
+        args="--host $(arg host) --town $(arg town) --headless --demo"
+        if="$(arg headless)"/>
+</launch>
