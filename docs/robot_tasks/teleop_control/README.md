@@ -16,7 +16,8 @@ colcon build --packages-select teleop_control
 source install/setup.bash
 
 # 2. 运行节点
-ros2 run teleop_control main_teleop```
+ros2 run teleop_control main_teleop
+```
 
 ## 4. 操作说明
 *   按 `W`：前进 (线速度 0.5)
