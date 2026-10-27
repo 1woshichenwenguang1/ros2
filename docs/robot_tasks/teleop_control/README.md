@@ -15,10 +15,10 @@ cd ~/hutb_ws
 colcon build --packages-select teleop_control
 source install/setup.bash
 
-# 2. 运行节点 (注：纯终端下推荐直接 run，launch 在后台无法捕获键盘输入)
+# 2. 运行节点
 ros2 run teleop_control main_teleop
-操作说明：
 
+4. 操作说明
 按 W：前进 (线速度 0.5)
 
 按 S：后退 (线速度 -0.5)
@@ -29,4 +29,8 @@ ros2 run teleop_control main_teleop
 
 按 Q：退出节点
 
-4. 运行效果验证
+5. 运行效果验证
+https://screenshot.png/
+
+6. 大模型声明
+本模块的代码与文档编写过程使用了 AI 大模型辅助。作者已对代码进行实际运行验证，对提交内容的正确性与完整性负全部责任。
