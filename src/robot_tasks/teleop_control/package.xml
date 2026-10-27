@@ -3,9 +3,9 @@
 <package format="3">
   <name>teleop_control</name>
   <version>0.0.0</version>
-  <description>Teleop Control Module</description>
-  <maintainer email="user@todo.todo">user</maintainer>
-  <license>TODO: License declaration</license>
+  <description>ROS 2 Keyboard Teleop Control Module</description>
+  <maintainer email="2507417911@qq.com">1woshichenwenguang1</maintainer>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
