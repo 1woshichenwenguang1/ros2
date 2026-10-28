@@ -10,7 +10,7 @@ class TeleopNode(Node):
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.twist = Twist()
         
-        # 修复审核员的 TTY 问题
+       # 判断当前是否在真实终端 (TTY) 中运行，防止在后台 launch 时崩溃
         if not sys.stdin.isatty():
             self.get_logger().error("错误：未检测到真实终端 (TTY)。请使用 'ros2 run teleop_control main_teleop' 运行以接收键盘输入。")
             sys.exit(1)
