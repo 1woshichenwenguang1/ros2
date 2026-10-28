@@ -32,7 +32,6 @@ class TeleopNode(Node):
         while rclpy.ok():
             key = self.get_key()
             
-            # 修复问题1：统一转换成小写，兼容大写 W/A/S/D
             key = key.lower() 
             
             if key == 'w':
@@ -48,7 +47,6 @@ class TeleopNode(Node):
                 self.twist.linear.x = 0.0
                 self.twist.angular.z = -0.5
             elif key == 'q':
-                # 修复问题2：退出前先发布一次零速度，防止底盘保持最后指令持续移动
                 self.twist.linear.x = 0.0
                 self.twist.angular.z = 0.0
                 self.publisher_.publish(self.twist)
