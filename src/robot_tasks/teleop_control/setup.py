@@ -13,13 +13,12 @@ setup(
         ('share/' + package_name + '/launch', ['launch/main.launch.py']),
     ],
     install_requires=['setuptools'],
-        zip_safe=True,
+    zip_safe=True,
     maintainer='1woshichenwenguang1',
     maintainer_email='2507417911@qq.com',
     description='ROS 2 Keyboard Teleop Control Module',
     license='MIT',
     tests_require=['pytest'],
-    entry_points={
     entry_points={
         'console_scripts': [
             'main_teleop = teleop_control.main_teleop:main',
