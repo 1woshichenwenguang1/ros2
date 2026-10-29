@@ -127,6 +127,7 @@ ROS Noetic 运行参数热更新（正弦信号）：[chap2/ros1_parameter_sine_
 * [悬崖边缘紧急制动仿真](./ground/cliff_brake.md) —— 用 MuJoCo 物理引擎与 ROS 三节点闭环实现车头测距触发的滞回紧急制动，附安全包络定量测试与坠落对照
 * [基于 Autoencoder 的雷达数据修复与避障](./ground/lidar_autoencoder_repair.md) —— 离线训练自编码器去除传感器噪声，修复后数据送入阈值避障控制链路，展示传感器数据容错层与控制层解耦的设计
 * [地面载具灯光自动控制](./ground/carla_auto_light.md)
+* [轨迹/里程计精度评估（ATE/RPE）](./ground/trajectory_accuracy_eval.md)
 
 ## 5. 空域载具 <span id='air_vehicle'></span>
 * [无人机着陆阶段识别与接地载荷预测](./air/landing_assessment.md)
