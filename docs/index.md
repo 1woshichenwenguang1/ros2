@@ -111,6 +111,8 @@ ROS Noetic 运行参数热更新（正弦信号）：[chap2/ros1_parameter_sine_
 * [YOLOv8 视觉感知目标跟随仿真](./ground/yolov8_target_tracking.md)
 * [车辆键盘遥操作与二维模拟](./ground/vehicle_pygame_teleop.md)
 
+* [任务1：机器人键盘控制模块](./robot_tasks/teleop_control/README.md)
+
 * [TurtleBot3 激光雷达自主避障（ROS 2）](./ground/turtlebot3_lidar_avoid.md) —— 订阅机载激光雷达，按扇区提取前/左/右最近距离，经三态状态机与势场法决策后发布 /cmd_vel，实现迷宫场景自主避障
 
 
