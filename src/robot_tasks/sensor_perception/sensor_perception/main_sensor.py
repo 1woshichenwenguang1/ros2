@@ -24,6 +24,16 @@ class MockCamera(Node):
         self.fps = self.get_parameter('fps').value
         self.frame_id = self.get_parameter('frame_id').value
 
+        if self.width <= 0 or self.height <= 0:
+            self.get_logger().fatal(
+                'width and height must be positive, got %d x %d'
+                % (self.width, self.height))
+            raise ValueError('invalid image size')
+
+        if self.fps <= 0:
+            self.get_logger().fatal('fps must be positive, got %r' % (self.fps,))
+            raise ValueError('invalid fps')
+            
         self.publisher = self.create_publisher(Image, '/camera/image_raw', 10)
 
         # background: a vertical colour gradient, built once
