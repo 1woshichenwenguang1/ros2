@@ -16,7 +16,7 @@ setup(
     zip_safe=True,
     maintainer='1woshichenwenguang1',
     maintainer_email='2507417911@qq.com',
-    description='ROS 2 Mock Sensor Perception Module',
+    description='ROS 2 Mock Sensor Source',
     license='MIT',
     tests_require=['pytest'],
     entry_points={
