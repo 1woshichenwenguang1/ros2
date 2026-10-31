@@ -3,7 +3,7 @@
 <package format="3">
   <name>sensor_perception</name>
   <version>0.0.0</version>
-  <description>ROS 2 Mock Sensor Perception Module</description>
+  <description>ROS 2 Mock Sensor Source</description>
   <maintainer email="2507417911@qq.com">1woshichenwenguang1</maintainer>
   <license>MIT</license>
 
