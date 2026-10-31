@@ -4,7 +4,7 @@
   <name>sensor_perception</name>
   <version>0.0.0</version>
   <description>ROS 2 Mock Sensor Perception Module</description>
-  <maintainer email="2507417911@qq.com">1woshichienwenguang1</maintainer>
+  <maintainer email="2507417911@qq.com">1woshichenwenguang1</maintainer>
   <license>MIT</license>
 
   <depend>rclpy</depend>
